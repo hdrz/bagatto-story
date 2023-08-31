@@ -23,7 +23,7 @@ The generated HTML will now be available in `site/` and you can open `site/index
 
 ### Demo site
 
-It's the index.html file in this repo. See it [here](https://bagatto-story.github.com).
+It's the index.html file in this repo. See it [here](https://hdrz.github.io/bagatto-story/).
 
 ### Content choices
 
