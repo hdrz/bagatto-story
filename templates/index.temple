@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<!--
+	A (modular, highly tweakable) responsive one-page theme for Hugo.
+	Ported from Hugo Story by CaressOfSteel, which ported from Story by HTML5UP.
+	This theme is licensed under the Creative Commons Attribution 3.0 License.
+-->
+<html>
+
+{% (bagatto/include "/templates/partials/header") %}
+
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="divided">
+    {% (bagatto/include "/templates/partials/banner") %}
+    {% (bagatto/include "/templates/partials/spotlights") %}
+    {% (bagatto/include "/templates/partials/gallery") %}
+    {% (bagatto/include "/templates/partials/items") %}
+    {% (bagatto/include "/templates/partials/elements") %}
+    {% (bagatto/include "/templates/partials/elements_reference") %}
+    {% (bagatto/include "/templates/partials/footer") %}
+  </div>
+  <!-- Wrapper -->
+
+</body>
+</html>
+

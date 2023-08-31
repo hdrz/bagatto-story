@@ -1,0 +1,27 @@
+<!-- Spotlights -->
+{% (each page (args :pages)
+   (printf ```
+    <!-- Spotlight -->
+    <section class="spotlight style1 orient-%s content-align-left image-position-center onscroll-image-fade-in" id="%s">
+        <div class="content">
+            <h2>%s</h2>
+            %s
+            <p>Like all spotlights, you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-spotlight">details</a>).</p>
+            <ul class="actions stacked">
+                <li><a href="%s" class="button smooth-scroll-middle">%s</a></li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="%s/images/%s" alt="%s" />
+        </div>
+    </section>
+    ```
+    (page :textside)
+    (page :id)
+    (page :title)
+    (bagatto/markdown->html (page :body))
+    (page :buttonlink)
+    (page :buttonlabel)
+    (get-in args [:config :static])
+    (page :imagefile)
+    (page :imagealt) )) %}

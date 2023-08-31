@@ -1,0 +1,20 @@
+<head>
+	<title>{{ (get-in args [:config :title]) }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="{{ (get-in args [:config :description]) }}">
+	<meta name="author" content="{{ (get-in args [:config :author]) }}">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ (get-in args [:config :static]) }}/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ (get-in args [:config :static]) }}/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ (get-in args [:config :static]) }}/images/favicon-16x16.png">
+    <link rel="manifest" href="{{ (get-in args [:config :static]) }}/site.webmanifest">
+    <link rel="mask-icon" href="{{ (get-in args [:config :static]) }}/images/safari-pinned-tab.svg" color="#5bbad5">
+	
+	<!-- CSS (minified from the static/css dir)-->
+	<link rel="stylesheet" href="{{ (get-in args [:config :static]) }}/css/main.min.css">
+	<noscript><link rel="stylesheet" href="{{ (get-in args [:config :static]) }}/css/noscript.min.css" /></noscript>
+
+</head>

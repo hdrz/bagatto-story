@@ -1,0 +1,21 @@
+<!-- Footer -->
+<footer class="wrapper style1 align-center" id="bot">
+    <div class="inner">
+        <ul class="icons">
+            <li><a target="_blank" href="{{ (get-in args [:config :github]) }}" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+            <li><a target="_blank" href="{{ (get-in args [:config :twitter]) }}" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a target="_blank" href="{{ (get-in args [:config :instagram]) }}" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a target="_blank" href="{{ (get-in args [:config :linkedin]) }}" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a target="_blank" href="mailto:{{ (get-in args [:config :email]) }}" class="fav icon style2 fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <p>Bagatto Story &copy; 2023 <a target="_blank" href="https://github.com/hdrz/">hdrz</a><span class="footerspacer icon fa-solid fa-arrow-left"></span>
+           Ported from Hugo Story &copy; 2020 <a target="_blank" href="https://github.com/caressofsteel/">CaressOfSteel</a><span class="footerspacer icon fa-solid fa-arrow-left"></span>
+           Design by <a target="_blank" href="https://html5up.net/story">HTML5UP</a><span class="footerspacer icon fa-solid fa-arrow-left"></span>
+           Images by <a target="_blank" href="https://unsplash.com">Unsplash</a></p>
+    </div>
+</footer>
+
+<!-- FontAwesome JS -->
+<script type="text/javascript" src="{{ (get-in args [:config :static]) }}/js/fontawesome-all.min.js.gz"></script>
+
+<script type="text/javascript" src="{{ (get-in args [:config :static]) }}/js/bundle.min.js"></script>

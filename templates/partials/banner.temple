@@ -1,0 +1,15 @@
+    <!-- Banner -->
+    <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="top">
+        <div class="content">
+            <h1>{{ (get-in args [:banner :title]) }}</h1>
+            <p class="major">A (modular, highly tweakable) responsive one-page template designed by <a href="https://html5up.net">HTML5 UP</a> and released for free under the <a href="https://html5up.net/license">Creative Commons</a>.</p>
+            {- (bagatto/markdown->html (get-in args [:banner :body])) -}
+            <p>You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).</p>
+            <ul class="actions stacked">
+                <li><a href="{{ (get-in args [:banner :buttonlink]) }}" class="button large wide smooth-scroll-middle">{{ (get-in args [:banner :buttonlabel]) }}</a></li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="{{ (get-in args [:config :static]) }}/images/{{ (get-in args [:banner :heroimage]) }}" alt="{{ (args [:banner :heroalt]) }}" />
+        </div>
+    </section>

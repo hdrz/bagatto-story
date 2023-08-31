@@ -1,0 +1,36 @@
+<!-- Gallery -->
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <h2>Gallery</h2>
+        <p>This is a <strong>Gallery</strong> element. It can behave as a lightbox (when given the <code>lightbox</code> class), and you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-gallery">details</a>).</p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery style1 medium lightbox onscroll-fade-in">
+
+      {% (each pic (args :gallery)
+         (printf ```
+        <!-- picture -->
+        <article>
+            <a href="%s/images/gallery/big/%s" class="image">
+                <img src="%s/images/gallery/small/%s" alt="%s" />
+            </a>
+            <div class="caption">
+                <h3>%s</h3>
+                %s
+                <ul class="actions fixed">
+                    <li><span class="button small">%s</span></li>
+                </ul>
+            </div>
+        </article>
+        ```
+        (get-in args [:config :static])
+        (pic :file)
+        (get-in args [:config :static])
+        (pic :file)
+        (pic :alt)
+        (pic :title)
+        (bagatto/markdown->html (pic :body))
+        (pic :buttonlabel) )) %}
+    </div>
+</section>
