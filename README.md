@@ -23,7 +23,7 @@ The generated HTML will now be available in `site/` and you can open `site/index
 
 ### Demo site
 
-It's the index.html file in this repo. See it [here](https://hdrz.github.io/bagatto-story/).
+It's the `index.html` file in this repo. See it [here](https://hdrz.github.io/bagatto-story/).
 
 ### Content choices
 
@@ -82,10 +82,10 @@ It will make you smarter, I promise.
 
 ## Thanks
 
-Calvin Rose, for [Janet](https://janet-lang.org/)
-Zach Smith, for [Bagatto](https://git.sr.ht/~subsetpark/bagatto)
-HTML5UP, for the initial [Story](https://html5up.net/story) theme
-caressofsteel, for [hugo-story](https://github.com/caressofsteel/hugo-story) port
+- Calvin Rose, for [Janet](https://janet-lang.org/)
+- Zach Smith, for [Bagatto](https://git.sr.ht/~subsetpark/bagatto)
+- HTML5UP, for the initial [Story](https://html5up.net/story) theme
+- caressofsteel, for [hugo-story](https://github.com/caressofsteel/hugo-story) port
 
 ## License
 
