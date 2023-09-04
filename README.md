@@ -8,9 +8,12 @@ Look [here](https://github.com/caressofsteel/hugo-story) for a description. HTML
 
 ## Fast start:
 
-To build the site, install or build Janet and Bagatto (in-depth installation
-instructions are available in the Bagatto manual), download this repo or clone it,
-`cd` into this directory (the one containing `index.janet`), and then run
+To build the site:
+- install or build Janet and Bagatto (in-depth installation instructions are
+  available in the Bagatto manual)
+- download this repo or clone it
+- `cd` into this directory (the one containing `index.janet`),
+- and then run --
 
 ```janet
 bag index.janet
@@ -51,7 +54,7 @@ source code in order to see it:
    `.yaml` files hard-coded for context, and there is no way (that I know of)
    to use context created in the `content/` folder.
 
-I checked other single-pgae themes for hugo. They are all trying hard to find
+I checked other single-page themes for hugo. They are all trying hard to find
 ways around the limitations.
 All this makes generating your preferred single-page site a bit inconvenient..
 
