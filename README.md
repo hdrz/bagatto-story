@@ -9,11 +9,10 @@ Look [here](https://github.com/caressofsteel/hugo-story) for a description. HTML
 ## Fast start:
 
 To build the site:
-- install or build Janet and Bagatto (in-depth installation instructions are
-  available in the Bagatto manual)
+- install or build [Janet](https://janet-lang.org/) and [Bagatto](https://git.sr.ht/~subsetpark/bagatto)
 - download this repo or clone it
 - `cd` into this directory (the one containing `index.janet`),
-- and then run --
+- and then run
 
 ```janet
 bag index.janet
